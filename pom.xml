@@ -1,14 +1,13 @@
 
-<project xmlns="http://maven.apache.org/POM/4.0.0"   
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0   
-http://maven.apache.org/xsd/maven-4.0.0.xsd">  
- <modelVersion>4.0.0</modelVersion>
-  <groupId>TestProject</groupId>
-  <artifactId>TestProject</artifactId>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>UI-Automation</groupId>
+  <artifactId>UI-Automation</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
- <dependencies>
+  <dependencies>
 
 	<!-- https://mvnrepository.com/artifact/org.testng/testng -->
 	<dependency>
@@ -31,6 +30,15 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
       <version>4.8.2</version>  
       <scope>test</scope>  
     </dependency> 
+    
+    <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+<dependency>
+    <groupId>io.rest-assured</groupId>
+    <artifactId>rest-assured</artifactId>
+    <version>5.5.0</version>
+    <scope>test</scope>
+</dependency>
+
   <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
 	<dependency>
 	    <groupId>com.aventstack</groupId>
@@ -51,6 +59,15 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	    <artifactId>selenium-firefox-driver</artifactId>
 	    <version>3.141.59</version>
 	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/org.hamcrest/hamcrest -->
+<dependency>
+    <groupId>org.hamcrest</groupId>
+    <artifactId>hamcrest</artifactId>
+    <version>3.0</version>
+    <scope>test</scope>
+</dependency>
+
 	
 	<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
 	<dependency>
@@ -95,7 +112,6 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <version>3.6.3</version>
 </dependency>
 
-	
 <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
 <dependency>
     <groupId>io.github.bonigarcia</groupId>
@@ -105,7 +121,6 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 
  </dependencies>
-
   
   <build>
   	<plugins>
@@ -132,5 +147,4 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
   	</plugins>  
   </build>
  
-  
 </project>
